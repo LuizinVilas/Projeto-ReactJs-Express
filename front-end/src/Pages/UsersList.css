@@ -1,0 +1,80 @@
+@keyframes FadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.List{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: first baseline;
+}
+
+.ListContainer{
+    max-height: 80%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border: 2px solid #ffff;
+    color: #ffff;
+    background-color: hsla(0, 0%, 100%, 0.1);
+    backdrop-filter: blur(100px);
+    padding: 20px;
+    margin: 5% auto;
+
+
+    & h2 {
+        margin: 10px;
+    }
+
+    & input {
+        font-size: 0.9em;
+        font-weight: bold;
+        width: 100%;
+        margin: 5px;
+        padding: 0.6em 0.8em;
+        background-color: hsla(0, 0%, 90%, 0.3);
+        color: #ffffff;
+        border: 2px solid transparent;
+        border-radius: 8px;
+        outline: none;
+    }
+
+    & a {
+        margin: 4px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    & input::placeholder {
+        color: #ffffff;
+    }
+
+    & a {
+        font-weight: 550;
+        margin-bottom: 1px;
+    }
+}
+
+#FadeInElement{
+    animation: FadeIn 2s ease;
+    animation-delay: 0s;
+}

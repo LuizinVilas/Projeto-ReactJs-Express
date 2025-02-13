@@ -1,0 +1,22 @@
+.Card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: first baseline;
+    align-content: center;
+    color: #ffffff;
+    border: 2px solid white;
+    width: 200px;
+    padding: 5px;
+    margin: 15px auto;
+    background-color: hsla(0, 0%, 100%, 0.1);
+
+    & p {
+        font-weight: bold;
+    }
+
+    & span {
+        font-weight: normal;
+    }
+}

@@ -1,0 +1,105 @@
+@keyframes ButtonAnimation{
+    0% {
+        background: linear-gradient(to right, hsla(338, 77%, 53%, 0.5), hsla(205, 30%, 49%, 0.5), hsla(30, 85%, 58%, 0.5), hsla(271, 45%, 52%, 0.5));
+    }
+    20% {
+        background: linear-gradient(to right, hsla(271, 45%, 52%, 0.5), hsla(338, 77%, 53%, 0.5), hsla(205, 30%, 49%, 0.5), hsla(30, 85%, 58%, 0.5));
+    }
+    40% {
+        background: linear-gradient(to right, hsla(30, 85%, 58%, 0.5), hsla(271, 45%, 52%, 0.5), hsla(338, 77%, 53%, 0.5), hsla(205, 30%, 49%, 0.5));
+    }
+    50% {
+        background: linear-gradient(to right, hsla(205, 30%, 49%, 0.5), hsla(30, 85%, 58%, 0.5), hsla(271, 45%, 52%, 0.5), hsla(338, 77%, 53%, 0.5));
+    }
+    70% {
+        background: linear-gradient(to right, hsla(338, 77%, 53%, 0.5), hsla(205, 30%, 49%, 0.5), hsla(30, 85%, 58%, 0.5), hsla(271, 45%, 52%, 0.5));
+    }
+    80% {
+        background: linear-gradient(to right, hsla(271, 45%, 52%, 0.5), hsla(338, 77%, 53%, 0.5), hsla(205, 30%, 49%, 0.5), hsla(30, 85%, 58%, 0.5));
+    }
+    100% {
+        background: linear-gradient(to right, hsla(30, 85%, 58%, 0.5), hsla(271, 45%, 52%, 0.5), hsla(338, 77%, 53%, 0.5), hsla(205, 30%, 49%, 0.5));
+    }
+}
+
+@keyframes FadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+#FadeInElement{
+    animation: FadeIn 2s ease;
+    animation-delay: 0s;
+}
+
+
+h1 {
+    margin-bottom: 4%;
+}
+
+.Container {
+    color: white;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    width: 80%;
+    max-width: 400px;
+    max-height: 340px;
+    padding: 20px;
+    margin: 25vh auto 2vh auto;
+    border-radius: 8px;
+    border: 2px solid #ffffff;
+    background-color: hsla(0, 0%, 100%, 0.1);
+    backdrop-filter: blur(100px);
+
+    & input {
+        font-size: 0.9em;
+        font-weight: bold;
+        width: 100%;
+        margin: 5px;
+        padding: 0.6em 0.8em;
+        background-color: hsla(0, 0%, 90%, 0.3);
+        color: #ffffff;
+        border: 2px solid transparent;
+        border-radius: 8px;
+        outline: none;
+    }
+
+    & input::placeholder {
+        color: #ffffff;
+    }
+
+    & button {
+        font-size: 0.9em;
+        font-weight: bolder;
+        width: 100%;
+        margin: 5px;
+        padding: 0.6em 0.8em;
+        color: #ffffff;
+        background-color: hsla(0, 0%, 100%, 0.3);
+        border: 1px solid transparent;
+        border-radius: 8px;
+    }
+
+    & button:hover { 
+        cursor: pointer;
+        animation: ButtonAnimation 1s infinite ease-in-out;
+        transition: 1000ms;
+    }
+
+    & a {
+        margin: 4px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+}
+

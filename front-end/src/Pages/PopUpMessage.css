@@ -1,0 +1,18 @@
+.PopUpMessage{
+    text-align: center;
+    position: absolute;
+    opacity: 0;
+    top: 30%;
+    left: 45%;
+    padding: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    color: #ffffff;
+    backdrop-filter: blur(100px);
+    background-color: hsla(0, 0%, 100%, 0.1);
+
+    & h1 {
+        font-weight: 500;
+        margin: 0;
+    }
+}
